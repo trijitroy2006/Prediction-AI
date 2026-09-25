@@ -188,9 +188,9 @@ with tab2:
         competitive_advantage = 35 if innovation_level == "Low" else 70
         resource_score = 65 if resource_availability == "Good" else 30
 
-        from risk_engine import calculate_risk, get_risk_status, calculate_success_probability
-        from mitigation_engine import generate_mitigation
-        from improvement_engine import generate_improvements
+        from milestone_2.risk_engine import calculate_risk, get_risk_status, calculate_success_probability
+        from milestone_3.mitigation_engine import generate_mitigation
+        from milestone_3.improvement_engine import generate_improvements
         risk_score = calculate_risk(market_competition, team_expertise, resource_availability, innovation_level, market_research)
         risk_status = get_risk_status(risk_score)
         success_probability = calculate_success_probability(risk_score)
@@ -225,10 +225,10 @@ with tab2:
             data.get("budget", 0),
         )
 
-        from swot_analysis import generate_swot
+        from milestone_2.swot_analysis import generate_swot
         swot = generate_swot(team_expertise, innovation_level, market_competition, resource_availability, market_research)
 
-        from feasibility import calculate_feasibility
+        from milestone_2.feasibility import calculate_feasibility
         feasibility_score = calculate_feasibility(market_opportunity, team_capability, competitive_advantage, resource_score)
 
         risk_input_data = {
