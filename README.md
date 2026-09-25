@@ -65,7 +65,7 @@ Prediction AI delivers a robust, accessible tool that empowers entrepreneurs to 
 ---
 
 ### 🛠️ Quick Start
-1. Clone the repository: `git clone https://github.com/trijitroy2006/Prediction-AI.git`
+1. Clone the repository: `git clone https://github.com/trijitroy2006/Trijit-Roy-Prediction-AI.git`
 2. Set up virtual environment: `python -m venv venv` and activate it.
 3. Install dependencies: `pip install -r requirements.txt`
 4. Add API Key: Create a `.env` file and add `GEMINI_API_KEY=your_key_here`
