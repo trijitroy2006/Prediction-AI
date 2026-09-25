@@ -1,14 +1,14 @@
 from flask import Flask, render_template, request, redirect, url_for, session, jsonify
-import database
-import market_analysis
+from milestone_3 import database
+from milestone_1 import market_analysis
 import secrets
 import feasibility
-from risk_engine import (
+from milestone_2.risk_engine import (
     calculate_risk,
     get_risk_status,
     calculate_success_probability
 )
-from swot_analysis import generate_swot
+from milestone_2.swot_analysis import generate_swot
 
 app = Flask(__name__)
 app.secret_key = secrets.token_hex(16)

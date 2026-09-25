@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
-import market_analysis
+from milestone_1 import market_analysis
 import textwrap
-import database
+from milestone_3 import database
 
-from recommendation_engine import generate_recommendations
-from llm_service import generate_llm_recommendations
+from milestone_3.recommendation_engine import generate_recommendations
+from milestone_3.llm_service import generate_llm_recommendations
 
 st.set_page_config(page_title="Prediction AI", layout="wide", initial_sidebar_state="collapsed")
 
